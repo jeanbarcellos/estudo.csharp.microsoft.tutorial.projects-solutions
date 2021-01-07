@@ -1,3 +1,4 @@
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace QuickTest
@@ -6,8 +7,9 @@ namespace QuickTest
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestGetCurrentDate()
         {
+            Assert.AreEqual(DateTime.Now.Date, QuickDate.Calendar.GetCurrentDate());
         }
     }
 }
